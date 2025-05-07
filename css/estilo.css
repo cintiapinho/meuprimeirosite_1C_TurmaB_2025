@@ -23,6 +23,10 @@ body{
     background-color: aqua;
 }
 
+section{
+    scroll-margin-top: 90px;
+}
+
 header{
     background-color: #f4f8fa ;
     color: #4d3f72;
@@ -148,6 +152,10 @@ nav ul li a{
     object-fit: cover;
 }  
 
+.imgcard{
+    width: 70%;
+}
+
 @media (max-width:675px){
     header .container, .sobre-container{
         flex-direction: column;
@@ -161,6 +169,10 @@ nav ul li a{
     
     .banner{
         margin-top: 160px;
+    }
+
+    section{
+        scroll-margin-top: 180px;
     }
     
 }
