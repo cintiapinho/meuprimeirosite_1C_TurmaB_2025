@@ -20,7 +20,7 @@
 }
 
 body{
-    background-color: aqua;
+    background-color: #f4f8fa;
 }
 
 section{
@@ -155,6 +155,59 @@ nav ul li a{
 .imgcard{
     width: 70%;
 }
+
+.centralizado{
+    text-align: center;
+}
+
+#acao .container {
+    display: grid; /* Ativa o layout em grade (grid) */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    /* Cria colunas que se ajustam automaticamente ao tamanho da tela.
+       Cada coluna terá no mínimo 200px e ocupará uma fração igual (1fr) do espaço disponível. */
+    gap: 20px; /* Espaço entre os itens do grid */
+    text-align: center; /* Centraliza o texto dentro de cada item */
+    padding: 50px 0; /* Espaçamento acima e abaixo do container */
+}
+
+#acao .item {
+    background-color: white; /* Fundo branco para o card */
+    border: 1px solid #ddd; /* Borda fina e cinza clara */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6); /* Sombra suave ao redor */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+    /* Transição suave ao passar o mouse (hover ou active) */
+    cursor: pointer; /* Muda o cursor para a “mãozinha” indicando que é clicável */
+  
+}
+
+#acao .item:hover {
+    transform: translateY(-5px); /* Move o card levemente para cima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais destacada ao passar o mouse */
+}
+
+#acao .item:active {
+    transform: scale(0.98); /* Reduz levemente o tamanho do card ao clicar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Sombra mais suave ao clicar */
+}
+
+#acao .item p {
+    margin-top: 15px; /* Espaço acima do parágrafo */
+    font-size: 0.95em; /* Tamanho da fonte um pouco menor que o padrão */
+    color: #4d3f72; /* Cor do texto (roxo escuro) */
+}
+
+#acao .imagem img {
+    width: 100%; /* Imagem ocupa toda a largura do container pai */
+    max-width: 150px; /* Mas nunca ultrapassa 150px de largura */
+    height: auto; /* Mantém a proporção original da imagem */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+.centraliza{
+    text-align: center;
+}
+
 
 @media (max-width:675px){
     header .container, .sobre-container{
