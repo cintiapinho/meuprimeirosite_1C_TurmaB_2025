@@ -217,22 +217,14 @@ nav ul li a{
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     margin: auto;    
-    text-align: center;    
-  }
-
-.card{
-max-width: 300px;
-}
-
-  .card h3 {
-    margin-top: 0;
-  }
+    text-align: justify;    
+  } 
 
   .btn {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background: #007bff;
+    background: #4d3f72;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -242,6 +234,7 @@ max-width: 300px;
   /* Modal */
 
   .modal {
+    margin-top: 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -259,12 +252,32 @@ max-width: 300px;
   }
 
 .modal-content {
+    max-height: 90vh;
+    overflow-y: auto; 
     background: white;
     padding: 30px;
     border-radius: 10px;
-    max-width: 400px;
-    text-align: center;
+    max-width: 600px;
+    text-align: justify;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .modal-content h4{
+    margin-top: 2%;
+    font-size: 1.1rem;
+    margin-bottom: 2%;
+   
+  }
+
+  .listacard{
+    margin-top: 1%;
+    margin-left: 10%;
+  }
+
+  .modal-content h3{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.4rem;
   }
 
   .close-btn {
@@ -292,13 +305,18 @@ max-width: 300px;
     .banner{
         margin-top: 160px;
     }
-
     section{
-        scroll-margin-top: 180px;
+        scroll-margin-top: 200px;
     }
-    
-}
 
+    .modal{
+        margin-top: 100px;
+    } 
+    
+    .modal-content{
+        max-height: 60vh;
+    } 
+}
     
 
 
