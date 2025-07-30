@@ -1,7 +1,7 @@
 # Repositório básico - Meu primeiro site
 
 ## Primeiro teste
-https://cintiapinho.github.io/MeuPrimeiroSite_2025_1C_TurmaA/
+https://cintiapinho.github.io/meuprimeirosite_1C_TurmaB_2025/
 
 ## CSS inline
 https://cintiapinho.github.io/MeuPrimeiroSite_2025_1C_TurmaA/cssinternoexterno/indexinline.html
