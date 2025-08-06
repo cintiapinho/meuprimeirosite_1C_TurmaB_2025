@@ -19,6 +19,7 @@ a{
   text-decoration: none;  
 }
 
+
 .logo{
   width: 35%;
 }
@@ -295,6 +296,23 @@ nav ul li a{
     font-weight: bold;
   }
 
+  
+
+/* Faz o footer ficar no rodapé da página de enviado */
+body.paginamensagem {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body.paginamensagem main {
+  flex: 1;
+}
+
+.mensagem{
+  margin-top: 10%;
+  background-color: aquamarine;
+}
 /*modal*/
 
 
