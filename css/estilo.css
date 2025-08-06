@@ -9,10 +9,18 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- font-family: "Jersey 15", sans-serif;
- 
+ font-family: "Jersey 15", sans-serif; 
  font-style: normal;
  scroll-behavior: smooth;
+
+}
+
+a{
+  text-decoration: none;  
+}
+
+.logo{
+  width: 35%;
 }
 
 .container {
@@ -31,7 +39,7 @@ section{
 
 header{
     background-color: #f4f8fa ;
-    color: #4d3f72;
+    color: #000080;
     padding: 15px 15px 15px 15px;
     width: 100%;
     top: 0;
@@ -63,7 +71,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #4d3f72;
+    color: #000080;
     text-decoration: none;    
 }
 
@@ -98,12 +106,10 @@ nav ul li a{
 }
 
 
-
-
-#sobre, #{
+#sobre{
     padding: 35px;
     background-color: #f4f8fa;
-    color: #4d3f72 ;
+    color: #000080 ;
 }
 
 .sobre-container{
@@ -139,7 +145,7 @@ nav ul li a{
  }
 
 .sobre-texto a{
-    color: #4d3f72;
+    color: #000080;
     text-decoration: none;
     font-size: 1em;
  }
@@ -214,7 +220,7 @@ nav ul li a{
 #acao .item p {
     margin-top: 15px; /* Espaço acima do parágrafo */
     font-size: 1.2em; /* Tamanho da fonte um pouco menor que o padrão */
-    color: #4d3f72; /* Cor do texto (roxo escuro) */
+    color: #000080; /* Cor do texto (roxo escuro) */
 }
 
 #acao .imagem img {
@@ -249,6 +255,7 @@ nav ul li a{
     transform: scale(1.03);
   }
 
+
   .formulario-contato {
     background-color: #fff;
     padding: 30px;
@@ -257,7 +264,7 @@ nav ul li a{
     max-width: 800px;
     margin: auto;
     margin-top: 40px;
-    color: #4d3f72;
+    color: #000080;
   }
   
   .grupo-form {
@@ -304,7 +311,7 @@ nav ul li a{
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background: #4d3f72;
+    background: #000080;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -379,6 +386,10 @@ nav ul li a{
 
 
 @media (max-width:675px){
+
+  .logo{
+    width: 45%;
+  }
     header .container, .sobre-container{
         flex-direction: column;
         text-align: center;        
