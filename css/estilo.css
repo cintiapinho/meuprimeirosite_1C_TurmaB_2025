@@ -296,7 +296,9 @@ nav ul li a{
     font-weight: bold;
   }
 
-  
+  input[type="range"] {
+    accent-color: #000080; /* Muda a cor da barra e do botão nas versões modernas */
+  }  
 
 /* Faz o footer ficar no rodapé da página de enviado */
 body.paginamensagem {
