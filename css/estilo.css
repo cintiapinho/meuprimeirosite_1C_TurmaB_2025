@@ -106,6 +106,23 @@ nav ul li a{
     text-shadow: 2px 2px 5px #dfe0e5 ;
 }
 
+.bannerdescritivo{
+  background:url(../img/bannerdescritivo.webp) no-repeat center/cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;/*alterei */
+  margin-top: 90px;
+  align-items: flex-start;/*alterei */
+  justify-content: center;
+  padding-left: 30px; /*alterei */
+  color: #fff;
+  font-size: 1.6em;
+  text-align:left;
+  text-shadow: 2px 2px 5px #dfe0e5 ;
+}
+
+
+
 
 #sobre{
     padding: 35px;
@@ -396,6 +413,51 @@ body.paginamensagem main {
     border-radius: 6px;
     text-decoration: none;
   }
+
+/* Estilo tabela */
+
+.tabela-container {
+  width: 100%;
+  overflow-x: auto; /* Ativa rolagem horizontal se precisar */
+  -webkit-overflow-scrolling: touch; /* Rolagem suave no mobile */
+}
+
+.tabela-container table {
+  min-width: 600px; /* Define um tamanho mínimo para não “espremê-la” demais */
+}
+.tabela-ia {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo translúcido */
+  color: #00ffe0; /* Cor ciano futurista */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabela-ia th, 
+.tabela-ia td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 255, 224, 0.3);
+}
+
+.tabela-ia thead {
+  background: linear-gradient(90deg, #00ffe0, #0078ff);
+  color: #000;
+  font-weight: bold;
+}
+
+.tabela-ia tbody tr:hover {
+  background-color: rgba(0, 255, 224, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.tabela-ia tbody tr:last-child td {
+  border-bottom: none;
+}
+
 
   /* Opcional: força 4 colunas apenas em telas grandes */
 @media (min-width: 1200px) {
