@@ -425,6 +425,7 @@ body.paginamensagem main {
 .tabela-container table {
   min-width: 600px; /* Define um tamanho mínimo para não “espremê-la” demais */
 }
+
 .tabela-ia {
   width: 100%;
   border-collapse: collapse;

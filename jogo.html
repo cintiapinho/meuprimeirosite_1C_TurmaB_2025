@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- Declara que este documento é HTML5 -->
+<html lang="pt-BR">
+<!-- Início do documento HTML, idioma definido como português do Brasil -->
+
+<head>
+<meta charset="UTF-8" />
+<!-- Define a codificação de caracteres como UTF-8 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- Permite que a página seja responsiva em dispositivos móveis -->
+<title>Jogo de IA</title>
+<!-- Título que aparece na aba do navegador -->
+ 
+<style>
+     /* ====== Estilo geral (cores no seu tema) ====== */
+  :root{
+    /* Variáveis CSS para cores usadas em todo o site */
+    --azul:#000080;
+    --azul2:#1f3b8f;
+    --ciano:#00c2ff;
+    --verde:#24c47e;
+    --rosa:#ff3ea5;
+    --roxo:#7a40ff;
+    --bg:#e6f2f5;
+  }
+
+  body{
+    margin:0; padding:24px;
+    font-family: Arial, sans-serif;
+    background: var(--bg); /* fundo da página */
+    color: var(--azul); /* cor padrão do texto */
+  }
+
+  h2, p { text-align:center; margin:0 0 10px; }
+  /* Centraliza títulos e parágrafos e adiciona espaço inferior */
+
+  .container{
+    position: relative;                /* referencia para filhos absolute */
+    width: 100%;
+    max-width: 960px;
+    height: 520px;                     /* altura fixa */
+    margin: 16px auto 22px;            /* centraliza horizontalmente */
+    border: 3px solid var(--azul);
+    border-radius: 12px;
+    overflow: hidden;                  /* evita que elementos saiam da área */
+    background-image: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600&auto=format&fit=crop");
+    background-size: cover;            /* cobre toda a área */
+    background-position: center;
+  }
+  
+</style>
+<body>
+
+    <h2>Atividade – Encaixe os Conceitos de IA</h2>
+    <p>Arraste as peças para a área correta. Treinando <b>position</b> e <b>drag & drop</b>.</p>
+  
+    <!-- Zonas absolutas dentro do container -->
+    <div class="container">
+        <!-- Zonas atualizadas -->
+        <div class="dropzone topleft" data-zone="ml">
+          <h3>🔍 Machine Learning</h3>
+        </div>
+      
+        <div class="dropzone topright" data-zone="cv">
+          <h3>👁️ Visão Computacional</h3>
+        </div>
+      
+        <div class="dropzone bottomleft" data-zone="pln">
+          <h3>💬 Processamento de Linguagem Natural</h3>
+        </div>
+      
+        <div class="dropzone bottomright" data-zone="ia-gen">
+          <h3>🤖 IA Generativa</h3>
+        </div>
+      
+        <div class="center-banner">✨ Inteligência Artificial ✨</div>
+      </div>
+      
+      <!-- Bandeja de peças (draggables) -->
+      <div class="tray">
+        <!-- Machine Learning -->
+        <div class="item" id="p1" draggable="true" data-answers="ml">Aprendizado Supervisionado</div>
+        <div class="item" id="p2" draggable="true" data-answers="ml">Aprendizado Não Supervisionado</div>
+        <div class="item" id="p3" draggable="true" data-answers="ml">Classificação</div>
+      
+        <!-- Visão Computacional -->
+        <div class="item" id="p4" draggable="true" data-answers="cv">Detecção de Objetos</div>
+        <div class="item" id="p5" draggable="true" data-answers="cv">Segmentação de Imagem</div>
+        <div class="item" id="p6" draggable="true" data-answers="cv">Reconhecimento Facial</div>
+      
+        <!-- Processamento de Linguagem Natural -->
+        <div class="item" id="p7" draggable="true" data-answers="pln">Tokenização</div>
+        <div class="item" id="p8" draggable="true" data-answers="pln">Análise de Sentimentos</div>
+        <div class="item" id="p9" draggable="true" data-answers="pln">Reconhecimento de Entidades</div>
+      
+        <!-- IA Generativa -->
+        <div class="item" id="p10" draggable="true" data-answers="ia-gen">GPT / LLM</div>
+        <div class="item" id="p11" draggable="true" data-answers="ia-gen">Stable Diffusion</div>
+        <div class="item" id="p12" draggable="true" data-answers="ia-gen">Criação de Arte / Texto</div>
+      </div>
+      
+      <!-- Gabarito visível sob demanda -->
+      <details>
+        <summary>Mostrar gabarito</summary>
+        <ul>
+          <li><b>Aprendizado Supervisionado</b> → Machine Learning</li>
+          <li><b>Aprendizado Não Supervisionado</b> → Machine Learning</li>
+          <li><b>Classificação</b> → Machine Learning</li>
+      
+          <li><b>Detecção de Objetos</b> → Visão Computacional</li>
+          <li><b>Segmentação de Imagem</b> → Visão Computacional</li>
+          <li><b>Reconhecimento Facial</b> → Visão Computacional</li>
+      
+          <li><b>Tokenização</b> → Processamento de Linguagem Natural</li>
+          <li><b>Análise de Sentimentos</b> → Processamento de Linguagem Natural</li>
+          <li><b>Reconhecimento de Entidades</b> → Processamento de Linguagem Natural</li>
+      
+          <li><b>GPT / LLM</b> → IA Generativa</li>
+          <li><b>Stable Diffusion</b> → IA Generativa</li>
+          <li><b>Criação de Arte / Texto</b> → IA Generativa</li>
+        </ul>
+      </details>
+</body>
+</html>  
