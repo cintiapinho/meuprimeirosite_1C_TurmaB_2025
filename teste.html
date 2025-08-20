@@ -7,6 +7,7 @@
 <meta charset="UTF-8" />
 <!-- Define a codificação de caracteres como UTF-8 -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 <!-- Permite que a página seja responsiva em dispositivos móveis -->
 <title>Position + Drag & Drop – IA</title>
 <!-- Título que aparece na aba do navegador -->
@@ -30,6 +31,19 @@
     background: var(--bg); /* fundo da página */
     color: var(--azul); /* cor padrão do texto */
   }
+
+  .container-header {
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: auto; /* Centraliza o container */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+
+
+.logo{
+  width: 35%;
+}
+
   h2, p { text-align:center; margin:0 0 10px; }
   /* Centraliza títulos e parágrafos e adiciona espaço inferior */
 
@@ -140,9 +154,16 @@
 </head>
 
 <body>
+    <header>
+        <div class="container-header">
+            <div class="logo">
+                <a href="index.html"><img class="logo" src="img/logoazul.webp" alt="logo de IA"> </a>               
+            </div>           
+        </div>
+    </header>
 
   <h2>Esse Jogo testa seus conhecimentos</h2>
-  
+
   <p>Arraste as peças para a área correta. Treinando <b>position</b> e <b>drag & drop</b>.</p>
 
   <!-- Zonas absolutas dentro do container -->
